@@ -6,8 +6,8 @@
 параметров a и b и выводить одно натуральное число — номер дня.
 """
 
-num_a = int(input(print("Введите число a: ")))
-num_b = int(input(print("Введите число b: ")))
+num_a = int(input(f"Введите число a: "))
+num_b = int(input(f"Введите число b: "))
 count = 0
 while num_a < num_b:
     num_a = num_a + num_a / 10

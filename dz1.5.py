@@ -6,13 +6,15 @@
 (соотношение прибыли к выручке). Далее запросите численность сотрудников фирмы
 и определите прибыль фирмы в расчете на одного сотрудника.
 """
-user_profit = int(input(print("Введите значения выручки:")))
-user_costs = int(input(print("Введите и издержек:")))
+user_profit = int(input(f"Введите значения выручки: "))
+user_costs = int(input(f"Введите и издержек: "))
+if user_profit == user_costs:
+    print("Фирма работает в ноль")
 if user_profit > user_costs:
     print('Фирма работает с прибылью')
     user_profitability = round((user_profit - user_costs)/user_profit, 2)
     print(f'рентабельность выручки составила: {user_profitability}')
-    num_of_employees = int(input(print("Введите численность сотрудников:")))
+    num_of_employees = int(input(f"Введите численность сотрудников: "))
     profit_employees = round(user_profit / num_of_employees, 2)
     print(f'прибыль фирмы в расчете на одного сотрудника: {profit_employees}')
 else:
